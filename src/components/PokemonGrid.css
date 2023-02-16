@@ -1,25 +1,77 @@
 .pokemon-grid {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 20px;
 }
 
 .pokemon-card {
-  width: 200px;
+  width: 30%;
   height: 250px;
   margin: 10px;
   background-color: #333;
   border: 1px solid #ccc;
+  border-radius: 5%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  flex: 1 1 25%;
 }
 
 .pokemon-name {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 10px;
+}
+
+.pokemon-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  
+  padding: 20px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.pokemon-modal-image {
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.pokemon-modal-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.pokemon-modal-details {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.pokemon-modal button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
 }

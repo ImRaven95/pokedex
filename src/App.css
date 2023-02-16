@@ -1,18 +1,15 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 body {
-  margin-top: 60px;
+  flex: 1;
 }
 
 nav {
   background-color: #333;
   color: #fff;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -43,6 +40,7 @@ nav li a {
 
 nav li a:hover {
   text-decoration: underline;
+  color: #73FB00;
 }
 
 form {
@@ -67,4 +65,32 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+.footer {
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
 
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+  }
+  
+  nav ul {
+    
+  }
+  
+  nav li {
+    margin: 5px 0;
+  }
+  
+  form {
+
+  }
+  
+  input[type="text"] {
+    margin-bottom: 5px;
+  }
+}
